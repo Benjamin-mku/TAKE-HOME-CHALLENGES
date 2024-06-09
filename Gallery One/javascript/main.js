@@ -61,3 +61,40 @@ photo1.addEventListener("mouseover", () => {
     photo2.style.marginLeft = "0px";
   });
 });
+
+//Event listeners for photo1 End---------------------------------------
+//Event listeners for photo2 start---------------------------------------
+photo2.addEventListener("mouseover", () => {
+  //create divison element--------------
+  const div = document.createElement("div");
+  //SET  class name of box to div
+  div.className = "box";
+  //create h2 element
+  const h2 = document.createElement("h2");
+  //set classname of box-caption-header to h2
+  h2.className = "box-caption-header";
+  //assign value to h2
+  h2.innerHTML = "HUMPBACK <br/> WHALE";
+  photo4.style.opacity = 0;
+  photo3.style.opacity = 0;
+
+  //create p element
+  const p = document.createElement("p");
+  //set classname of box-caption-country to p
+  p.className = "box-caption-country";
+  p.innerText = "South Africa";
+  //create anchor element
+  const link = document.createElement("a");
+  //set attribute href and its value to a
+  link.setAttribute("href", "https://google.com");
+  link.textContent = "Know More >";
+  //append h2,p,a to a div element
+  div.appendChild(h2);
+  div.appendChild(p);
+  div.appendChild(link);
+  container.appendChild(div);
+  //adding box in the center
+  div.style.left = "27%";
+  //set opacity of 0 whenever we hover or put cursor on photo4
+  photo2.style.opacity = 0;
+});
