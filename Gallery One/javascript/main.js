@@ -26,7 +26,7 @@ photo1.addEventListener("mouseover", () => {
   //create anchor element
   const link = document.createElement("a");
   //set attribute href and its value to a
-  link.setAttribute("href", "https://google.com");
+  link.setAttribute("href", "#");
   link.textContent = "Know More >";
   //append h2,p,a to a div element
   div.appendChild(h2);
@@ -86,7 +86,7 @@ photo2.addEventListener("mouseover", () => {
   //create anchor element
   const link = document.createElement("a");
   //set attribute href and its value to a
-  link.setAttribute("href", "https://google.com");
+  link.setAttribute("href", "#");
   link.textContent = "Know More >";
   //append h2,p,a to a div element
   div.appendChild(h2);
@@ -130,7 +130,7 @@ photo3.addEventListener("mouseover", () => {
   //create anchor element
   const link = document.createElement("a");
   //set attribute href and its value to a
-  link.setAttribute("href", "https://google.com");
+  link.setAttribute("href", "#");
   link.textContent = "Know More >";
   photo4.style.opacity = 0;
   //append h2,p,a to a div element
@@ -174,7 +174,7 @@ photo4.addEventListener("mouseover", () => {
   //create anchor element
   const link = document.createElement("a");
   //set attribute href and its value to a
-  link.setAttribute("href", "https://google.com");
+  link.setAttribute("href", "#");
   link.textContent = "Know More >";
   //append h2,p,a to a div element
   div.appendChild(h2);
