@@ -30,3 +30,24 @@ photo_one.addEventListener("mouseover", () => {
     phome.style.opacity = 1;
   });
 });
+
+//Event Listner for photo two ----------------------------------------
+photo_two.addEventListener("mouseover", () => {
+  //here we need to create the box that will show up whenever we hover on photo
+  //const div = document.createElement("div");
+  const div2 = document.createElement("div");
+  //set classname of box to div element
+  div2.className = "box2";
+  div2.style.marginLeft;
+  //set background color to the box
+  //div.className = "box";
+
+  photo_one_img.appendChild(div2);
+  //adding opacity of 0 to each photo whenever we hover to photo one
+  photo_one.style.opacity = 1;
+  photo_two.style.opacity = 0;
+  photo_three.style.opacity = 0;
+  photo_four.style.opacity = 0;
+});
+
+//adding mouseout listener so that whenever we move out our mouse the box will be hidden
