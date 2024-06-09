@@ -142,4 +142,12 @@ photo3.addEventListener("mouseover", () => {
   div.style.left = "35%";
   //set opacity of 0 whenever we hover or put cursor on photo4
   photo3.style.opacity = 0;
+  //set mouse out event so that any time we move out our cursor to photo 4 the div or box will display nothing
+
+  photo3.addEventListener("mouseout", () => {
+    div.style.display = "none";
+    //set opacity of 1 whenever we move out our cursor on photo4
+    photo3.style.opacity = 1;
+    photo4.style.opacity = 1;
+  });
 });
