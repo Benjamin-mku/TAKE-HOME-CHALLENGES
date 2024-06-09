@@ -48,6 +48,15 @@ photo_two.addEventListener("mouseover", () => {
   photo_two.style.opacity = 0;
   photo_three.style.opacity = 0;
   photo_four.style.opacity = 0;
+  //adding mouseout listener so that whenever we move out our mouse the box will be hidden
+  photo_two.addEventListener("mouseout", () => {
+    div2.style.display = "none";
+    //removing opacity of 1 to each whenever we move out mouse from photo one
+    photo_one.style.opacity = 1;
+    photo_two.style.opacity = 1;
+    photo_three.style.opacity = 1;
+    photo_four.style.opacity = 1;
+  });
 });
 
 //adding mouseout listener so that whenever we move out our mouse the box will be hidden
