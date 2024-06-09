@@ -59,4 +59,16 @@ photo_two.addEventListener("mouseover", () => {
   });
 });
 
-//adding mouseout listener so that whenever we move out our mouse the box will be hidden
+photo_three.addEventListener("mouseover", () => {
+  //here we need to create the box that will show up whenever we hover on photo
+  const div2 = document.createElement("div");
+
+  div2.className = "box3";
+
+  photo_one_img.appendChild(div2);
+  //adding opacity of 0 to each photo whenever we hover to photo one
+  photo_one.style.opacity = 1;
+  photo_two.style.opacity = 1;
+  photo_three.style.opacity = 0;
+  photo_four.style.opacity = 0;
+});
